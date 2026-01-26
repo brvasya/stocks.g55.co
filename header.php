@@ -20,7 +20,7 @@ function toggleMenu() {
 <body>
 <div class="header">
 <img class="menubt" onClick="toggleMenu()" src="menu.svg">
-<h1><a href="/stocks/"><?php echo $_SERVER['HTTP_HOST'] ?></a></h1>
+<h1><a href="/"><?php echo $_SERVER['HTTP_HOST'] ?></a></h1>
 </div>
 <div id="menu" style="display: none;">
 <?php include 'menu.php' ?>
