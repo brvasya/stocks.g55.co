@@ -2,7 +2,7 @@
 <form method="POST">
 <div class="container" style="border-color: white;">
 <img src="usd.svg">
-<span class="title shared"><input type="text" onKeyUp="this.value = this.value.toUpperCase();" name="s1" value="GOOGL%3ANASDAQ" required> - <input type="text" onKeyUp="this.value = this.value.toUpperCase();" name="s2" value="MA%3ANYSE" required></span>
+<span class="title shared"><input type="text" onKeyUp="this.value = this.value.toUpperCase();" name="s1" value="GOOGL" required> - <input type="text" onKeyUp="this.value = this.value.toUpperCase();" name="s2" value="MA" required></span>
 <span class="price shared">Stocks<input style="display: none;" type="text" name="redirect" value='window.open("stocks.php'></span>
 </div>
 <div class="container" style="border-color: white;">

@@ -7,6 +7,10 @@ $S1 = explode('&s2=', $S1TMP, 2)[0];
 $S2TMP = explode('s2=', $url, 2)[1];
 $S2 = explode('&p1=', $S2TMP, 2)[0];
 
+$exchange = (strpos($S1,'MA')!==false || strpos($S1,'V')!==false || strpos($S2,'MA')!==false || strpos($S2,'V')!==false) ? '%3ANYSE' : '%3ANASDAQ';
+$S1 .= $exchange;
+$S2 .= $exchange;
+
 $api_1 = str_replace('$', '', file_get_contents('https://www.google.com/finance/quote/' . $S1 . ''));
 $api_2 = str_replace('$', '', file_get_contents('https://www.google.com/finance/quote/' . $S2 . ''));
 
