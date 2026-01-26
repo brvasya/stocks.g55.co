@@ -7,8 +7,8 @@ $S1 = explode('&s2=', $S1TMP, 2)[0];
 $S2TMP = explode('s2=', $url, 2)[1];
 $S2 = explode('&p1=', $S2TMP, 2)[0];
 
-$exchange1 = (strpos($S1,'MA')!==false || strpos($S1,'V')!==false || strpos($S2,'MA')!==false || strpos($S2,'V')!==false) ? '%3ANYSE' : '%3ANASDAQ';
-$exchange2 = (strpos($S1,'MA')!==false || strpos($S1,'V')!==false || strpos($S2,'MA')!==false || strpos($S2,'V')!==false) ? '%3ANYSE' : '%3ANASDAQ';
+$exchange1 = (strpos($S1,'MA')!==false || strpos($S1,'V')!==false) ? '%3ANYSE' : '%3ANASDAQ';
+$exchange2 = (strpos($S2,'MA')!==false || strpos($S2,'V')!==false) ? '%3ANYSE' : '%3ANASDAQ';
 
 $S1 .= $exchange1;
 $S2 .= $exchange2;
